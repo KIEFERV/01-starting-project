@@ -1,15 +1,11 @@
 import './TabButton.css';
 
-export default function TabButton({children, type}){
-    function handleClick(){
-    console.log('Hello World');
+export default function TabButton({children, onSelect}){
 
-}
-//closure
     return(
         <li>
-              {type}
-            <button onClick={handleClick}>{children} </button>
+            
+            <button onClick={onSelect}>{children} </button>
         </li>
     )
 }
