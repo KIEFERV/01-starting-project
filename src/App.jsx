@@ -1,23 +1,9 @@
 
 import componentsImg from './assets/components.png';
-import {CORE_CONCEPTS} from './data';
-import Header from './components/Header';
-import CoreConcept from './components/CoreConcept'
-//function UserData(){
- // const user = {first:"Kiefer", last:"Villarreiz", age:"22"};
-  //return(
- // <div>
- //   <h2>{user.last}, {user.first}</h2>
- //   <h3>Age: {user.age}</h3>
-  //</div>
- // )
-//}
-
-
-
-
-
-
+import { CORE_CONCEPTS } from './data';
+import Header from './components/Header/Header.jsx';
+import CoreConcept from './components/CoreConcepts/CoreConcepts.jsx'
+import TabButton from './components/TabButton/TabButton.jsx';
 
 function App() {
   return (
@@ -47,6 +33,17 @@ function App() {
           }/>
          
         </ul>
+       </section>
+       <section>
+        <section id = "examples">
+          <h2>Examples</h2>
+          <menu>
+           <TabButton>Components</TabButton>
+            <TabButton >JSX</TabButton>
+           <TabButton >Props</TabButton>
+            <TabButton >State</TabButton>
+          </menu>
+        </section>
        </section>
       </main>
 
